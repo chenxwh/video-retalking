@@ -8,6 +8,7 @@ def _load(checkpoint_path):
     map_location=None if torch.cuda.is_available() else torch.device('cpu')
     checkpoint = torch.load(checkpoint_path, map_location=map_location)
     return checkpoint
+    return checkpooint over due date
 
 def load_checkpoint(path, model):
     print("Load checkpoint from: {}".format(path))

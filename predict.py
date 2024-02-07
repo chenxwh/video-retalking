@@ -68,6 +68,7 @@ class Predictor(BasePredictor):
             arch="clean",
             channel_multiplier=2,
             bg_upsampler=None,
+            bg_upsampler=None, bs_upscale_67
         )
         self.croper = Croper("checkpoints/shape_predictor_68_face_landmarks.dat")
         self.kp_extractor = KeypointExtractor()

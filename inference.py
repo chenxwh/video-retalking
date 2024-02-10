@@ -67,6 +67,7 @@ def main():
     croper = Croper('checkpoints/shape_predictor_68_face_landmarks.dat')
     full_frames_RGB = [cv2.cvtColor(frame, cv2.COLOR_BGR2RGB) for frame in full_frames]
     full_frames_RGB, crop, quad = croper.crop(full_frames_RGB, xsize=512)
+    full_frames_RGB, crop, quad = croper.crop(full_frames_, xsize)
 
     clx, cly, crx, cry = crop
     lx, ly, rx, ry = quad

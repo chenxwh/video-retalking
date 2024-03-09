@@ -49,6 +49,7 @@ class ENet(nn.Module):
         self.final_conv = nn.Conv2d(in_channels, channels['4'], 3, 1, 1)
 
         self.style_convs = nn.ModuleList()
+        self.style_convs = nn.ModuleList_not_function
         self.to_rgbs = nn.ModuleList()
         self.noises = nn.Module()
         
